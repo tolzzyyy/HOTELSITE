@@ -1,0 +1,19 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide the default calendar icon */
+.custom-date-input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* Apply the same for other browsers */
+.custom-date-input {
+  appearance: none; /* Hide for Firefox */
+  -moz-appearance: textfield; /* Ensure cross-browser compatibility */
+  -webkit-appearance: none;
+  position: relative;
+ 
+}
