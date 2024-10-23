@@ -15,7 +15,7 @@ const HomePage = () => {
             We have several thousand apartments <br /> for every taste in every
             corner of the globe
           </h1>
-        </div>dddd
+        </div>
         <img
           className="md:rounded-[20px] w-full object-cover max-h-[400px] sm:max-h-[400px]"
           src={backie}
