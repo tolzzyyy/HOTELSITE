@@ -1,7 +1,16 @@
 import React from "react";
 import backie from "../Assets/unsplashhh.avif";
 import { SlLocationPin } from "react-icons/sl";
-import { BsCalendar, BsSearch, BsStar, BsStarFill } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { GrNext, GrPrevious } from "react-icons/gr";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import image12 from '../Assets/Ellipse 6.png'
+import image13 from '../Assets/Ellipse 6 (1).png'
+import image14 from '../Assets/Ellipse 6 (2).png'
 import image1 from "../Assets/img.png";
 import image2 from "../Assets/img (2).png";
 import image3 from "../Assets/img (3).png";
@@ -12,7 +21,9 @@ import image10 from "../Assets/Rectangle 9 (3).png";
 import image6 from "../Assets/Mask group (1).png";
 import image7 from "../Assets/Mask group (2).png";
 import image8 from "../Assets/Mask group (3).png";
-import image11 from "../Assets/icon.png"
+import image11 from "../Assets/icon.png";
+
+import { BsCalendar, BsSearch, BsStarFill } from "react-icons/bs";
 
 const HomePage = () => {
   return (
@@ -127,11 +138,15 @@ const HomePage = () => {
         </div>
         <div className="grid px-[40px] md:px-4 xl:px-[70px] gap-6  w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col gap-4  h-full rounded-[10px] px-2 py-2 border-[1px]  border-[#F0F0F3]">
-          <div className="w-full relative">
+            <div className="w-full relative">
               <div className="absolute flex justify-between items-center w-full p-4">
-                <div className="bg-[#F3F4F4]/90  rounded-md flex items-center py-1  gap-2 px-1 "><BsStarFill className="text-[#EFC968]" size={13}/> <p className="font-thin">4.8</p></div>
-                <div className="bg-[#F3F4F4]/90  w-[30px] h-[30px] flex items-center justify-center rounded-full py-1  gap-2 px-1 "><img src={image11} alt="" /></div>
-               
+                <div className="bg-[#F3F4F4]/90  rounded-md flex items-center py-1  gap-2 px-1 ">
+                  <BsStarFill className="text-[#EFC968]" size={13} />{" "}
+                  <p className="font-thin">4.8</p>
+                </div>
+                <div className="bg-[#F3F4F4]/90  w-[30px] h-[30px] flex items-center justify-center rounded-full py-1  gap-2 px-1 ">
+                  <img src={image11} alt="" />
+                </div>
               </div>
               <img className="w-full" src={image5} alt="" />
             </div>
@@ -178,11 +193,15 @@ const HomePage = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4  h-full rounded-[10px] px-2 py-2 border-[1px]  border-[#F0F0F3]">
-          <div className="w-full relative">
+            <div className="w-full relative">
               <div className="absolute flex justify-between items-center w-full p-4">
-                <div className="bg-[#F3F4F4]/90  rounded-md flex items-center py-1  gap-2 px-1 "><BsStarFill className="text-[#EFC968]" size={13}/> <p className="font-thin">4.8</p></div>
-                <div className="bg-[#F3F4F4]/90  w-[30px] h-[30px] flex items-center justify-center rounded-full py-1  gap-2 px-1 "><img src={image11} alt="" /></div>
-               
+                <div className="bg-[#F3F4F4]/90  rounded-md flex items-center py-1  gap-2 px-1 ">
+                  <BsStarFill className="text-[#EFC968]" size={13} />{" "}
+                  <p className="font-thin">4.8</p>
+                </div>
+                <div className="bg-[#F3F4F4]/90  w-[30px] h-[30px] flex items-center justify-center rounded-full py-1  gap-2 px-1 ">
+                  <img src={image11} alt="" />
+                </div>
               </div>
               <img className="w-full" src={image9} alt="" />
             </div>
@@ -231,9 +250,13 @@ const HomePage = () => {
           <div className="flex flex-col gap-4  h-full rounded-[10px] px-2 py-2 border-[1px]  border-[#F0F0F3]">
             <div className="w-full relative">
               <div className="absolute flex justify-between items-center w-full p-4">
-                <div className="bg-[#F3F4F4]/90  rounded-md flex items-center py-1  gap-2 px-1 "><BsStarFill className="text-[#EFC968]" size={13}/> <p className="font-thin">4.8</p></div>
-                <div className="bg-[#F3F4F4]/90  w-[30px] h-[30px] flex items-center justify-center rounded-full py-1  gap-2 px-1 "><img src={image11} alt="" /></div>
-               
+                <div className="bg-[#F3F4F4]/90  rounded-md flex items-center py-1  gap-2 px-1 ">
+                  <BsStarFill className="text-[#EFC968]" size={13} />{" "}
+                  <p className="font-thin">4.8</p>
+                </div>
+                <div className="bg-[#F3F4F4]/90  w-[30px] h-[30px] flex items-center justify-center rounded-full py-1  gap-2 px-1 ">
+                  <img src={image11} alt="" />
+                </div>
               </div>
               <img className="w-full" src={image10} alt="" />
             </div>
@@ -279,7 +302,144 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        
+        </div>
+      </div>
+      <div className="sm:mt-[80px] px-[40px] md:px-4 xl:px-[70px] relative h-full py-7 flex flex-col gap-[30px] sm:gap-[50px] w-full items-center   justify-center">
+        <h1 className="md:text-[36px] text-[29px] font-bold">Reviews</h1>
+        <div className="flex flex-col relative items-center w-full  mx-auto px-9">
+          <div className="w-full flex flex-col items-center justify-center relative">
+            <div className="flex justify-between items-center top-0 bottom-0 h-full absolute w-full mt-">
+              <div className="swiper-button-prev-unique-1 z-50 rounded-md -ml-[40px] bg-[#EE685F] p-3 cursor-pointer">
+                <GrPrevious className="h-4 w-4 text-white" />
+              </div>
+
+              <div className="swiper-button-next-unique-1 z-50 -mr-10 rounded-md  bg-[#EE685F] p-3 cursor-pointer">
+                <GrNext className="h-4 w-4 text-white" />
+              </div>
+            </div>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={15}
+              slidesPerView={1}
+              breakpoints={{
+               
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+               
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+              navigation={{
+                nextEl: ".swiper-button-next-unique-1",
+                prevEl: ".swiper-button-prev-unique-1",
+              }}
+              pagination={{
+                el: ".swiper-pagination-unique-1",
+                clickable: true,
+                bulletClass: "swiper-pagination-bullet",
+                bulletActiveClass: "swiper-pagination-bullet-active",
+              }}
+              className="w-full h-full mx-7"
+            >
+              <SwiperSlide className="flex px-4 items-center justify-center">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <img src={image12} className="w-[80px]" alt="" />
+                  <div className="flex flex-col gap-3">
+                    <p className="max-w-[320px] font-thin text-[#a6a6a9] text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis harum dicta maiores tempora dignissimos unde
+                      dolorum commodi! In magnam rerum, natus deserunt autem,
+                      aliquam enim numquam voluptatum quaerat inventore
+                      sapiente.
+                    </p>
+                    <p className="text-[#a6a6a9] text-center font-thin">
+                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="flex px-4 items-center justify-center">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <img src={image13} className="w-[80px]" alt="" />
+                  <div className="flex flex-col gap-3">
+                    <p className="max-w-[320px] font-thin text-[#a6a6a9] text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis harum dicta maiores tempora dignissimos unde
+                      dolorum commodi! In magnam rerum, natus deserunt autem,
+                      aliquam enim numquam voluptatum quaerat inventore
+                      sapiente.
+                    </p>
+                    <p className="text-[#a6a6a9] text-center font-thin">
+                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="flex px-4 items-center justify-center">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <img src={image14} className="w-[80px]" alt="" />
+                  <div className="flex flex-col gap-3">
+                    <p className="max-w-[320px] font-thin text-[#a6a6a9] text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis harum dicta maiores tempora dignissimos unde
+                      dolorum commodi! In magnam rerum, natus deserunt autem,
+                      aliquam enim numquam voluptatum quaerat inventore
+                      sapiente.
+                    </p>
+                    <p className="text-[#a6a6a9] text-center font-thin">
+                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="flex px-4 items-center justify-center">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <img src={image12} className="w-[80px]" alt="" />
+                  <div className="flex flex-col gap-3">
+                    <p className="max-w-[320px] font-thin text-[#a6a6a9] text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis harum dicta maiores tempora dignissimos unde
+                      dolorum commodi! In magnam rerum, natus deserunt autem,
+                      aliquam enim numquam voluptatum quaerat inventore
+                      sapiente.
+                    </p>
+                    <p className="text-[#a6a6a9] text-center font-thin">
+                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="flex px-4 items-center justify-center">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <img src={image12} className="w-[80px]" alt="" />
+                  <div className="flex flex-col gap-3">
+                    <p className="max-w-[320px] font-thin text-[#a6a6a9] text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perspiciatis harum dicta maiores tempora dignissimos unde
+                      dolorum commodi! In magnam rerum, natus deserunt autem,
+                      aliquam enim numquam voluptatum quaerat inventore
+                      sapiente.
+                    </p>
+                    <p className="text-[#a6a6a9] text-center font-thin">
+                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+            {/* <div className="swiper-pagination-unique-1 mt-2 items-center justify-center flex gap-1" /> */}
+          </div>
+          <div className="bg-[#EE685F] rounded-md text-white w-[275px] mt-10 h-[50px] flex items-center text-center justify-center">More Reviews</div>
+
         </div>
       </div>
     </div>
