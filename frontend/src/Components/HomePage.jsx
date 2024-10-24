@@ -8,9 +8,9 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import image12 from '../Assets/Ellipse 6.png'
-import image13 from '../Assets/Ellipse 6 (1).png'
-import image14 from '../Assets/Ellipse 6 (2).png'
+import image12 from "../Assets/Ellipse 6.png";
+import image13 from "../Assets/Ellipse 6 (1).png";
+import image14 from "../Assets/Ellipse 6 (2).png";
 import image1 from "../Assets/img.png";
 import image2 from "../Assets/img (2).png";
 import image3 from "../Assets/img (3).png";
@@ -20,10 +20,14 @@ import image9 from "../Assets/Rectangle 9 (2).png";
 import image10 from "../Assets/Rectangle 9 (3).png";
 import image6 from "../Assets/Mask group (1).png";
 import image7 from "../Assets/Mask group (2).png";
+import image15 from "../Assets/Rectangle 17.png";
 import image8 from "../Assets/Mask group (3).png";
 import image11 from "../Assets/icon.png";
+import image16 from "../Assets/Rectangle 17 (1).png"
+import image17 from "../Assets/Rectangle 17 (2).png"
 
 import { BsCalendar, BsSearch, BsStarFill } from "react-icons/bs";
+import { FaClock } from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -322,17 +326,16 @@ const HomePage = () => {
               spaceBetween={15}
               slidesPerView={1}
               breakpoints={{
-               
                 640: {
                   slidesPerView: 1,
                   spaceBetween: 20,
                 },
-               
+
                 768: {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
-                
+
                 1024: {
                   slidesPerView: 3,
                   spaceBetween: 40,
@@ -362,7 +365,11 @@ const HomePage = () => {
                       sapiente.
                     </p>
                     <p className="text-[#a6a6a9] text-center font-thin">
-                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                      <span className="text-black font-medium">
+                        {" "}
+                        Tola Egberongbe
+                      </span>{" "}
+                      Publisher
                     </p>
                   </div>
                 </div>
@@ -379,7 +386,11 @@ const HomePage = () => {
                       sapiente.
                     </p>
                     <p className="text-[#a6a6a9] text-center font-thin">
-                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                      <span className="text-black font-medium">
+                        {" "}
+                        Tola Egberongbe
+                      </span>{" "}
+                      Publisher
                     </p>
                   </div>
                 </div>
@@ -396,7 +407,11 @@ const HomePage = () => {
                       sapiente.
                     </p>
                     <p className="text-[#a6a6a9] text-center font-thin">
-                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                      <span className="text-black font-medium">
+                        {" "}
+                        Tola Egberongbe
+                      </span>{" "}
+                      Publisher
                     </p>
                   </div>
                 </div>
@@ -413,7 +428,11 @@ const HomePage = () => {
                       sapiente.
                     </p>
                     <p className="text-[#a6a6a9] text-center font-thin">
-                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                      <span className="text-black font-medium">
+                        {" "}
+                        Tola Egberongbe
+                      </span>{" "}
+                      Publisher
                     </p>
                   </div>
                 </div>
@@ -430,7 +449,11 @@ const HomePage = () => {
                       sapiente.
                     </p>
                     <p className="text-[#a6a6a9] text-center font-thin">
-                      <span className="text-black font-medium"> Tola Egberongbe</span>     Publisher
+                      <span className="text-black font-medium">
+                        {" "}
+                        Tola Egberongbe
+                      </span>{" "}
+                      Publisher
                     </p>
                   </div>
                 </div>
@@ -438,8 +461,64 @@ const HomePage = () => {
             </Swiper>
             {/* <div className="swiper-pagination-unique-1 mt-2 items-center justify-center flex gap-1" /> */}
           </div>
-          <div className="bg-[#EE685F] rounded-md text-white w-[275px] mt-10 h-[50px] flex items-center text-center justify-center">More Reviews</div>
-
+          <div className="bg-[#EE685F] rounded-md text-white w-[275px] mt-10 h-[50px] flex items-center text-center justify-center">
+            More Reviews
+          </div>
+        </div>
+      </div>
+      <div className="sm:mt-[80px] flex flex-col gap-[50px] py-7">
+        <div>
+          <h1 className="md:text-[36px] w-full text-[29px] text-center font-bold">
+            Recent Post
+          </h1>
+        </div>
+        <div className="grid px-[40px] md:px-4 xl:px-[70px] gap-6  w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-col gap-2">
+            <img src={image15} alt="" />
+            <div className="w-full flex justify-between">
+              <p>May 23 2024</p>
+              <p className="flex gap-1 text-[#92C6EB] items-center"><FaClock/> 5 minutes ago</p>
+            </div>
+            <div className="font-bold text-[20px]">My trip to Athens</div>
+            <div>
+              <h1 className="text-[#999A9B] font-thin">
+                It would seem that in a city where Theseus, Plato and Epicurus
+                once walked, the very idea of the subway is alien to the city,
+                but already...
+              </h1>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <img src={image16} alt="" />
+            <div className="w-full flex justify-between">
+              <p>May 23 2024</p>
+              <p className="flex gap-1 text-[#92C6EB] items-center"><FaClock/> 5 minutes ago</p>
+            </div>
+            <div className="font-bold text-[20px]">Vinius Resort</div>
+            <div>
+              <h1 className="text-[#999A9B] font-thin">
+                It would seem that in a city where Theseus, Plato and Epicurus
+                once walked, the very idea of the subway is alien to the city,
+                but already...
+              </h1>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <img src={image17} alt="" />
+            <div className="w-full flex justify-between">
+              <p>May 23 2024</p>
+              <p className="flex gap-1 text-[#92C6EB] items-center"><FaClock/> 5 minutes ago</p>
+            </div>
+            <div className="font-bold text-[20px]">Tips for flying on a plane</div>
+            <div>
+              <h1 className="text-[#999A9B] font-thin">
+                It would seem that in a city where Theseus, Plato and Epicurus
+                once walked, the very idea of the subway is alien to the city,
+                but already...
+              </h1>
+            </div>
+          </div>
+         
         </div>
       </div>
     </div>
