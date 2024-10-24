@@ -8,7 +8,7 @@ import LastMinuteDeals from './Components/LastMinuteDeals'
 const App = () => {
   const location = useLocation();
   return (
-    <div className='py-10   '>
+    <div className='py-10 font-montserrat   '>
       <TopNav />
       <Routes location={location} key={location.key}>
           <Route path="/" element={<Layout />}>
