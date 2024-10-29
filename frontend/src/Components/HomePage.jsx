@@ -23,15 +23,28 @@ import image7 from "../Assets/Mask group (2).png";
 import image15 from "../Assets/Rectangle 17.png";
 import image8 from "../Assets/Mask group (3).png";
 import image11 from "../Assets/icon.png";
-import image16 from "../Assets/Rectangle 17 (1).png"
-import image17 from "../Assets/Rectangle 17 (2).png"
+import image16 from "../Assets/Rectangle 17 (1).png";
+import image17 from "../Assets/Rectangle 17 (2).png";
 
-import { BsCalendar, BsSearch, BsStarFill } from "react-icons/bs";
-import { FaClock } from "react-icons/fa";
+import {
+  BsCalendar,
+  BsFacebook,
+  BsSearch,
+  BsSendFill,
+  BsStarFill,
+  BsTwitterX,
+} from "react-icons/bs";
+import {
+  FaClock,
+  FaFacebookMessenger,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const HomePage = () => {
   return (
-    <div className="max-w-[1680px] overflow-x-hidden  xl:mx-auto  my-5">
+    <div className="max-w-[1680px] overflow-x-hidden  xl:mx-auto  mt-5">
       <div className="max-h-[410px] w-full md:px-[70px]   sm:max-h-[400px] text-[#262729] relative">
         <div className="absolute p-[20px] py-[10px] overflow-hidden sm:p-[60px] flex flex-col lg:justify-start gap-4 bg-white/40 md:rounded-[20px] w-full  h-full">
           <h1 className="sm:text-[50px] w-[600px] text-[36px] font-bold leading-9 sm:leading-[50px] ">
@@ -477,7 +490,9 @@ const HomePage = () => {
             <img src={image15} alt="" />
             <div className="w-full flex justify-between">
               <p>May 23 2024</p>
-              <p className="flex gap-1 text-[#92C6EB] items-center"><FaClock/> 5 minutes ago</p>
+              <p className="flex gap-1 text-[#92C6EB] items-center">
+                <FaClock /> 5 minutes ago
+              </p>
             </div>
             <div className="font-bold text-[20px]">My trip to Athens</div>
             <div>
@@ -492,7 +507,9 @@ const HomePage = () => {
             <img src={image16} alt="" />
             <div className="w-full flex justify-between">
               <p>May 23 2024</p>
-              <p className="flex gap-1 text-[#92C6EB] items-center"><FaClock/> 5 minutes ago</p>
+              <p className="flex gap-1 text-[#92C6EB] items-center">
+                <FaClock /> 5 minutes ago
+              </p>
             </div>
             <div className="font-bold text-[20px]">Vinius Resort</div>
             <div>
@@ -507,9 +524,13 @@ const HomePage = () => {
             <img src={image17} alt="" />
             <div className="w-full flex justify-between">
               <p>May 23 2024</p>
-              <p className="flex gap-1 text-[#92C6EB] items-center"><FaClock/> 5 minutes ago</p>
+              <p className="flex gap-1 text-[#92C6EB] items-center">
+                <FaClock /> 5 minutes ago
+              </p>
             </div>
-            <div className="font-bold text-[20px]">Tips for flying on a plane</div>
+            <div className="font-bold text-[20px]">
+              Tips for flying on a plane
+            </div>
             <div>
               <h1 className="text-[#999A9B] font-thin">
                 It would seem that in a city where Theseus, Plato and Epicurus
@@ -518,7 +539,91 @@ const HomePage = () => {
               </h1>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-full bg-[#F3F2F0] px-[40px]  md:px-4 xl:px-[70px] sm:mt-[80px] flex items-center justify-center flex-col gap-[50px] py-10">
+        <div className="grid grid-cols-1 w-full gap-7 sm:grid-cols-3 lg:grid-cols-4 ">
+          <div className="flex flex-col gap-2">
+            <h1>Title of Section</h1>
+            <p className="font-thin"> page title</p>
+            <p className="font-thin"> page title</p>
+            <p className="font-thin"> page title</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h1>Title of Section</h1>
+            <p className="font-thin"> page title</p>
+            <p className="font-thin"> page title</p>
+            <p className="font-thin"> page title</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h1>Title of Section</h1>
+            <p className="font-thin"> page title</p>
+            <p className="font-thin"> page title</p>
+            <p className="font-thin"> page title</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h1>Subscribe to NewsLetter</h1>
+
+            <h1 className="font-thin">Your email</h1>
+            <div className="relative w-full md:w-full lg:w-full">
+              <input
+                className="w-full border border-[#EE685F] outline-none p-2 pr-[40px] rounded-lg h-[35px]"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button className="absolute inset-y-0 right-0 h-full w-[40px] flex items-center justify-center bg-[#EE685F] rounded-r-lg text-white">
+                <BsSendFill size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="border-t-[1px] w-full  border-[#CCCBCA]  ">
+          <div className="w-full flex flex-col md:flex-row gap-3 justify-between pt-7 md:items-center">
+          
+              <h1 className="text-[32px]">Hotel</h1>
          
+            <div>
+              <ul className="flex gap-4 items-center">
+                <a href="">
+                  {" "}
+                  <BsFacebook className="text-blue-500" size={24} />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    className="gradient-icon"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="instagramGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style={{ stopColor: "#f09433" }} />
+                        <stop offset="50%" style={{ stopColor: "#e6683c" }} />
+                        <stop offset="100%" style={{ stopColor: "#bc1888" }} />
+                      </linearGradient>
+                    </defs>
+                    <FaInstagram fill="url(#instagramGradient)" size={24} />
+                  </svg>
+                </a>
+                <a href="">
+                  <BsTwitterX size={24}/>
+                </a>
+                <a href="">
+                  <FaWhatsapp size={24} className="text-green-400" />
+                </a>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

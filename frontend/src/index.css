@@ -23,6 +23,20 @@
   border-color: rgba(255, 255, 255, 1);
 }
 
+
+.instagram-icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.instagram-icon:hover {
+  opacity: 0.8; /* Slightly dim on hover */
+}
+
 .swiper-button-prev.custom-nav,
 .swiper-button-next.custom-nav {
   position: relative;
